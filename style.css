@@ -1,0 +1,168 @@
+*{font-family: Helvetica, arial, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a {color: black;
+    text-decoration: none;} 
+
+/* Parametros modificados de caja de contacto de boodstrap */
+.caja-contacto{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-style: none;
+    padding: 30px;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+.tabla-horario{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+    margin-top: 100px;
+}
+.dias{font-weight:lighter;
+    background-color:gray;
+    color: white;
+    font-size: 20px;}
+
+.horarios{font-style: italic;
+    background-color:gray;
+    color: white;}
+
+.sabados{
+    background-color:black;
+    color: white;}
+
+
+.logoinsightsup {
+    float: left;
+    margin-left: 8px;}
+
+/* Parametros modificados de un NAV de boodstrap */
+.gridnavegador{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 2;
+}
+
+
+.ul-navegador{
+    display: flex;
+    flex-direction: row;
+    list-style:none;
+    padding: 20px;
+    gap: 20px;
+    justify-content: space-around;}
+
+body{
+    background-image: url(./Imagenes/fondopag.png);
+    background-repeat: repeat-y;
+    background-size:cover;
+}
+
+/* Parametros modificados de carrousel de boodstrap */
+.carrusel{
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.grillaservicios{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 150px;
+    justify-content: space-around;
+
+}
+
+.servicioindividual{
+    padding: 20px;
+    text-align:justify;
+    text-decoration: none;
+}
+
+.servicioindividual .subtitulo{
+    font-size: 15px;
+}
+
+.servicioindividual h2{
+    font-size: 25px;
+}
+.creemos{
+    font-size:medium;
+    font-style:oblique;
+    text-align: left;
+}
+
+.bienvenido-mas-intro{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+}
+
+.introagencia{
+    max-width: 500px;
+    margin: 0 auto;
+    padding-top: 10px;
+    text-align: justify;
+    justify-content: center;
+}
+
+.integrantes{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    margin-bottom: 100px;
+  }
+
+.rounded-image {
+    border-radius: 50%;
+  }
+
+  td{
+    padding: 10px;
+  }
+
+body{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.whatsappflotante{
+    position: fixed;
+    width: 90px;
+    right: 10px;
+    bottom: 10px;
+}
+
+.whatsappflotante img{
+    width: 100%;
+}
+
+
+
+footer{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align:center;
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 991px){
+    .grillaservicios{
+        grid-template-columns: 1fr;
+    }
+    .bienvenido-mas-intro{
+        grid-template-columns: 1fr;
+    }
+}
